@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.clear {clear: both;}
+
+header {
+    background-color:  #e2e2e2;
+    padding: 10px 2% 40px 2%;
+}
+
+.logo-1 {
+    float: left;
+    width: 150px;
+    height: 60px;
+    background-color: white;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo-2 {
+    float: right;
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.cover-form {
+    width: 100%;
+}
+
+.bg {
+    position: relative;
+    height: 560px;
+    background-image: url(imagens/_\ \(3\).jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.form-container {
+    position: absolute;
+    right: 30px;
+    top: -2.5%;
+    width: 400px;
+    height: 105%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 9px 8px 16px 0px rgba(0, 0, 0, 0.261);
+    z-index: 3;
+}
+
+.form-container h2 {
+    font-weight: normal;
+    padding: 25px 15px;
+    color: black;
+    font-size: 18px;
+    background-color: #e0e0e041;
+}
+
+.form-container form {
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.form-container form p {
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-wraper:not(:first-child) { /*Irá aplicar estilos para cada .form-wrapper exceto o primeiro*/
+    margin-top: 20px;
+
+}
+
+.form-wraper:last-child {
+    margin-top: 20px;
+    
+}
+
+.form-container form input[type=text] {
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 40px;
+    line-height: 45px; /*é usado para ajustar o espaço entre as linhas de texto, tornando o texto mais fácil de ler*/
+    padding-left: 10px;
+    outline: 0;
+}
+
+.form-container form input[type=submit] {
+    background-color: #E3C5A8;
+    text-transform: uppercase; /*Deixa o texto todo em maiusculo*/
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 20px;
+
+}
+
+.chamada {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.icone-seta {
+    background-image: url(imagens/arrow.png);
+    height: 45px;
+    width: 45px;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%; /*a borda esquerda da imagem ficará no centro do contêiner, por isso é necessario utilizar o transform -50% para que o meio da imagem da seta fique no meio do container e nao a borda esquerda, pois assim ela ira ficar totalmente centralizada*/
+    top: -22px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    z-index: 2;
+    
+}
+
+section.chamada .container {
+    background-color: #d7b799;
+    padding: 70px 0 50px 0;
+} 
+
+
+.chamada h2 {
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.chamada p {
+    color: white;
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.flex-mosaico {
+    display: flex;
+}
+
+.item-1-mosaico {
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 6px;
+
+}
+
+.item-2-mosaico {
+    width: 40%;
+    padding: 60px 40px;
+    background-color: #e8d5c4;
+    color: white;
+    margin-top: 6px;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .bg {
+        text-align: center;
+        padding: 40px 0;
+        height: auto;
+    }
+
+    .form-container {
+        max-width: 400px;
+        width: 96%;
+        height: auto;
+        position: static; /*É o valor padrão para todos os elementos, o elemento é posicionado conforme o fluxo normal do documento*/
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-mosaico {
+        display: block;
+    }
+    .item-1-mosaico {
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico {
+        width: 100%;
+        text-align: justify;
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    header {
+        text-align: center;
+    }
+
+    .logo-1, .logo-2 {
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+}
+
+

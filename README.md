@@ -5,7 +5,6 @@ Este projeto é uma landing page desenvolvida para uma imobiliária fictícia. O
 
 **Você pode visualizar o site [aqui](https://tainamartins20.github.io/landing-page-imobiliaria/).**
 
-
 ## 🌐 Tecnologias utilizadas:
 - **HTML5**: Estruturação do conteúdo da página.
 - **CSS3**: Estilização e design responsivo.
@@ -15,6 +14,28 @@ Este projeto é uma landing page desenvolvida para uma imobiliária fictícia. O
 - **Formulário de Contato**: Permite que os visitantes enviem informações de contato.
 - **Seção de Destaque**: Apresenta uma chamada atraente com uma imagem de fundo e texto.
 - **Galeria de Imagens**: Exibe imagens dos interiores dos apartamentos com textos ilustrativos.
+
+## 📝 Validação do formulário:
+O formulário de contato inclui validação para garantir que as informações sejam inseridas corretamente. A validação é feita usando JavaScript (jQuery) e possui as seguintes exigências:
+- **Nome**:
+  - Deve ser preenchido com pelo menos dois nomes.
+  - Cada nome deve começar com uma letra maiúscula e ser seguido por letras minúsculas (ex: "João Silva").
+
+- **Telefone**:
+  - Deve estar no formato: (XX) XXXX-XXXX (ex: (12) 3456-7890).
+  - O campo não pode estar vazio.
+
+- **E-mail**:
+  - Deve estar no formato de e-mail válido (ex: joaosilva@gmail.com).
+  - O campo não pode estar vazio.
+  
+### Comportamento do formulário:
+- **Campo Inválido**:
+  - Quando um campo é preenchido incorretamente, ele é destacado com uma borda vermelha e o texto "Campo inválido!" é exibido.
+  - Após correção, o campo volta ao estilo padrão.
+
+- **Mensagem de Sucesso**:
+  - Se todos os campos atenderem aos requisitos, uma mensagem de sucesso será exibida: "Formulário enviado com sucesso!".
 
 ## 🗂️ Estrutura do projeto:
 - **index.html**: Arquivo principal da página, contendo a estrutura HTML.
